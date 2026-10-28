@@ -9,7 +9,9 @@ Türkçe Assist seçenekleriyle çalışan tek kutulu prompt stüdyosu.
 - Assist menüsünün dokuz kategorisi ve 440 seçeneği özgün sırada korunur. Bütün seçenekler Türkçe görünür; seçilince özgün İngilizce ifade metnin sonuna eklenir.
 - Eklenen etiketler × ile kaldırılır. Uygulama sadece kendi eklediği metin aralığını siler; kaynakta önceden bulunan aynı ifadeyi değiştirmez.
 - Model, 10 oran, çözünürlük ve adet ayarları ayrı tutulur. Kopyala yalnız promptun kendisini panoya verir.
-- Görsel / Video / Ses sekmeleri ayrı yerel taslaklar tutar. Referanslar yalnız yerel önizlemedir; dış üretim hizmetine ayrıca eklenir.
+- Görsel / Video sekmeleri ayrı yerel taslaklar tutar. Video ayarlarında 720p/1080p ve süre seçilir. Ses sekmesi kaldırıldı. Referanslar yalnız yerel önizlemedir; dış üretim hizmetine ayrıca eklenir.
+- Assist, model ve ayar menüleri dışarı tıklayınca veya odak başka alana geçince kapanır; Escape menüyü kapatıp odağı düğmesine döndürür.
+- 7 kaynak için örnek görsel vardır: önceki iki fotoğraf ve yeni beş kapak. Kartlarda 640 px WebP, büyütmede yeni kapaklar için 1024 px WebP açılır. Kaynak promptlar değişmez.
 - Prompt iyileştirme ücretli ve kilitlidir. Kaynak geliştirme paketindeki server/enhance.ts ve enhance-preset.json, yetkilendirme ile AI adaptörü bağlanabilecek hazır altyapıdır. Bu statik GitHub Pages yayını ücret veya AI isteği çalıştırmaz.
 - Önceki proje kayıtları ve yedekler korunur. Eski düzenleme ve planlama kaynakları geliştirme paketinde bulunur.
 
@@ -19,4 +21,4 @@ Statik yayın GitHub Pages üzerinden sunulur. Site ve içerdiği hazır çalı�
 
 ## Sürüm
 
-3.0.0 · 28 Ekim 2026. React, Dexie ve Zod ile geliştirildi. Derlenmiş uygulama index.html içindedir. N01.jpg / N02.jpg uygulama için üretilmiş AI örnekleridir. Bileşen bildirimleri THIRD-PARTY-NOTICES.txt içindedir.
+3.1.0 · 28 Ekim 2026. React, Dexie ve Zod ile geliştirildi. Derlenmiş uygulama index.html içindedir. N01.jpg / N02.jpg ve covers/ içindeki dosyalar uygulama için üretilmiş AI örnekleridir. Bileşen bildirimleri THIRD-PARTY-NOTICES.txt içindedir.
