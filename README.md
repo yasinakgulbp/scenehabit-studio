@@ -1,23 +1,22 @@
 # SceneHabit Studio
 
-Türkçe arayüzlü, kursun altı parçalı formülüyle çalışan görsel prompt oluşturucu.
+Türkçe Assist seçenekleriyle çalışan tek kutulu prompt stüdyosu.
 
 ## Çalışma biçimi
 
 - 262 başlangıç: 160 Promptwise hazır içerik metni, kurs bankalarından 100 benzersiz prompt, iki denenmiş fotoğraf uyarlaması.
-- Prompt oluştur: Doğal UGC, telefon/selfie, portre, ürün, sinematik veya kendi sahnen. Özne ve eylem → ortam → kamera → ışık → duygu → görünüm sırasıyla kendi sahneni anlat.
-- Boş alanlar, sahnenin diğer bilgilerine uygun seçimi görsel modeline bırakan İngilizce yönergelerle doldurulur. Bunlar uygulamanın tamamlama kurallarıdır. En az bir tarif veya teknik seçimi gerekir.
-- 440 kaynak teknik ifadenin görsele uygun gruplarından seçim yap; etiketleri × ile kaldır. Kamera hareketi seçenekleri video için teknik sözlükte ayrıca bulunur. Önemli İngilizce tariflerin Türkçe anlamları gösterilir.
-- 262 kaynağın parçalarını incele; kamera, ışık, duygu ve doku parçalarını açık seçimle ekle veya örneğin tamamını alanlara aktar. Cümleler anahtar sözcüklerle gruplandığı için karma cümleleri kontrol et. Eski örneğin kişisi ve mekânı yeni sahneye kendiliğinden taşınmaz.
-- Kaynak düzenleyicisi de korunur: ilk açılışta metin aynıdır; kullanıcı tarafından tanımlanan tekil ifade değişiklikleri uygulanır.
-- Model ve oran ayarları prompt metninden ayrı tutulur.
-- Karakter kartları, referans rolleri, proje sürümleri, tam yedek ve kopya olarak geri yükleme.
-- UGC, podcast, kil animasyon ve 2D reklam planlama paketleri.
+- Metnini tek kutuya yaz veya hazır promptu aynen aç. Otomatik yeniden yazma, altı adımlı sihirbaz ve karakter yerleştirme bu ekranda yoktur.
+- Assist menüsünün dokuz kategorisi ve 440 seçeneği özgün sırada korunur. Bütün seçenekler Türkçe görünür; seçilince özgün İngilizce ifade metnin sonuna eklenir.
+- Eklenen etiketler × ile kaldırılır. Uygulama sadece kendi eklediği metin aralığını siler; kaynakta önceden bulunan aynı ifadeyi değiştirmez.
+- Model, 10 oran, çözünürlük ve adet ayarları ayrı tutulur. Kopyala yalnız promptun kendisini panoya verir.
+- Görsel / Video / Ses sekmeleri ayrı yerel taslaklar tutar. Referanslar yalnız yerel önizlemedir; dış üretim hizmetine ayrıca eklenir.
+- Prompt iyileştirme ücretli ve kilitlidir. Kaynak geliştirme paketindeki server/enhance.ts ve enhance-preset.json, yetkilendirme ile AI adaptörü bağlanabilecek hazır altyapıdır. Bu statik GitHub Pages yayını ücret veya AI isteği çalıştırmaz.
+- Önceki proje kayıtları ve yedekler korunur. Eski düzenleme ve planlama kaynakları geliştirme paketinde bulunur.
 
-Bu uygulama bir dil modeli veya görsel/video motoru çalıştırmaz. Hazırlanan metinler dış üretim hizmetinde kullanılır. O hizmetin hesap ve ücretleri ayrıdır. Projeler ve yüklenen referanslar tarayıcıda kalır; uygulama bunları dış sunucuya göndermez. Siteyi kapatmadan önce projeye kaydet; tarayıcı verilerini temizlemeden tam yedek indir.
+Bu uygulama bir dil modeli veya görsel/video motoru çalıştırmaz. Hazırlanan metinler dış üretim hizmetinde kullanılır. O hizmetin hesap ve ücretleri ayrıdır. Basit stüdyo taslakları tarayıcıda otomatik saklanır. Referans önizlemeleri sayfa kapandığında silinir. Önceki projeler için Yardım & yedek bölümünü kullan.
 
 Statik yayın GitHub Pages üzerinden sunulur. Site ve içerdiği hazır çalışma metinleri herkese açıktır. Özel projeler bu depoya yüklenmez. Kurs PDF arşivi, ücretli kitap, oturum kayıtları ve hesap verileri yayın paketinde bulunmaz.
 
 ## Sürüm
 
-2.1.0 · 28 Ekim 2026. React, Dexie ve Zod ile geliştirildi. Derlenmiş uygulama index.html içindedir. N01.jpg / N02.jpg uygulama için üretilmiş AI örnekleridir. Bileşen bildirimleri THIRD-PARTY-NOTICES.txt içindedir.
+3.0.0 · 28 Ekim 2026. React, Dexie ve Zod ile geliştirildi. Derlenmiş uygulama index.html içindedir. N01.jpg / N02.jpg uygulama için üretilmiş AI örnekleridir. Bileşen bildirimleri THIRD-PARTY-NOTICES.txt içindedir.
